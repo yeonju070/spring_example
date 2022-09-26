@@ -31,4 +31,10 @@ public class ReviewBO {
 	public int updateReviewById(int id, String review) {
 		return reviewDAO.updateReviewById(id, review);
 	}
+	
+	// input : 삭제할 db
+	// output : X
+	public void deleteReviewById(int id) {
+		reviewDAO.deleteReviewById(id);
+	}
 }
